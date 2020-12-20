@@ -164,17 +164,13 @@
 		32445DB4258F186000E8456F /* Impartus */ = {
 			isa = PBXGroup;
 			children = (
-				32D06513258F44250095B38A /* Presenter */,
-				32D06512258F44180095B38A /* Interactor */,
-				32D06509258F43E00095B38A /* Controller */,
+				32D0652B258F64280095B38A /* CleanArchitecture */,
 				32D064F0258F41160095B38A /* Parser */,
 				32D064E5258F40BC0095B38A /* Gateway */,
 				32D064DA258F2D3A0095B38A /* Entity */,
 				32445DD4258F217A00E8456F /* DataHandler */,
 				32445DD3258F215600E8456F /* Utility */,
 				32445DD2258F214500E8456F /* Model */,
-				32445DD1258F213C00E8456F /* ViewModel */,
-				32445DD0258F213400E8456F /* View */,
 			);
 			path = Impartus;
 			sourceTree = "<group>";
@@ -270,6 +266,18 @@
 				32D06526258F4CB20095B38A /* Presenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		32D0652B258F64280095B38A /* CleanArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				32445DD0258F213400E8456F /* View */,
+				32D06509258F43E00095B38A /* Controller */,
+				32445DD1258F213C00E8456F /* ViewModel */,
+				32D06512258F44180095B38A /* Interactor */,
+				32D06513258F44250095B38A /* Presenter */,
+			);
+			path = CleanArchitecture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
