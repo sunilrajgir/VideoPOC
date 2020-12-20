@@ -13,7 +13,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        OrientationHandler.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+    }
 
-
+    @IBAction func testVideoBtnAction(_ sender: UIButton) {
+        let videoVc = VideoViewController(nibName: "VideoViewController", bundle: nil)
+        navigationController?.pushViewController(videoVc, animated: true)
+    }
+        
 }
 
