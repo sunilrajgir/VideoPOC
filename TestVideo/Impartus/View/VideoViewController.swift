@@ -8,7 +8,16 @@
 import UIKit
 
 class VideoViewController: UIViewController {
-
+    let network : DataHandler
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    init(_ network:DataHandler) {
+        self.network = network
+        super.init(nibName: "VideoViewController", bundle: nil)
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -17,5 +26,4 @@ class VideoViewController: UIViewController {
         super.viewWillAppear(animated)
         OrientationHandler.lockOrientation(UIInterfaceOrientationMask.landscapeLeft, andRotateTo: UIInterfaceOrientation.landscapeLeft)
     }
-
 }

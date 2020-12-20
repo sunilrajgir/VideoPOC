@@ -18,6 +18,13 @@
 		32445DB7258F18AD00E8456F /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32445DB5258F18AD00E8456F /* VideoViewController.swift */; };
 		32445DB8258F18AD00E8456F /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32445DB6258F18AD00E8456F /* VideoViewController.xib */; };
 		32445DCC258F1F0A00E8456F /* OrientationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32445DCB258F1F0A00E8456F /* OrientationHandler.swift */; };
+		32445DD6258F21A500E8456F /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32445DD5258F21A500E8456F /* DataHandler.swift */; };
+		32D064DC258F2D640095B38A /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D064DB258F2D640095B38A /* Videos.swift */; };
+		32D064E1258F30FD0095B38A /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D064E0258F30FD0095B38A /* Video.swift */; };
+		32D064E7258F40D30095B38A /* GatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D064E6258F40D30095B38A /* GatewayProtocol.swift */; };
+		32D064EC258F40F60095B38A /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D064EB258F40F60095B38A /* Gateway.swift */; };
+		32D064F2258F412A0095B38A /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D064F1258F412A0095B38A /* ParserProtocol.swift */; };
+		32D064FA258F41440095B38A /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D064F9258F41440095B38A /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,13 @@
 		32445DB5258F18AD00E8456F /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		32445DB6258F18AD00E8456F /* VideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
 		32445DCB258F1F0A00E8456F /* OrientationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationHandler.swift; sourceTree = "<group>"; };
+		32445DD5258F21A500E8456F /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		32D064DB258F2D640095B38A /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
+		32D064E0258F30FD0095B38A /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		32D064E6258F40D30095B38A /* GatewayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayProtocol.swift; sourceTree = "<group>"; };
+		32D064EB258F40F60095B38A /* Gateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gateway.swift; sourceTree = "<group>"; };
+		32D064F1258F412A0095B38A /* ParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
+		32D064F9258F41440095B38A /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,11 +152,82 @@
 		32445DB4258F186000E8456F /* Impartus */ = {
 			isa = PBXGroup;
 			children = (
-				32445DB5258F18AD00E8456F /* VideoViewController.swift */,
-				32445DB6258F18AD00E8456F /* VideoViewController.xib */,
-				32445DCB258F1F0A00E8456F /* OrientationHandler.swift */,
+				32D064F0258F41160095B38A /* Parser */,
+				32D064E5258F40BC0095B38A /* Gateway */,
+				32D064DA258F2D3A0095B38A /* Entity */,
+				32445DD4258F217A00E8456F /* DataHandler */,
+				32445DD3258F215600E8456F /* Utility */,
+				32445DD2258F214500E8456F /* Model */,
+				32445DD1258F213C00E8456F /* ViewModel */,
+				32445DD0258F213400E8456F /* View */,
 			);
 			path = Impartus;
+			sourceTree = "<group>";
+		};
+		32445DD0258F213400E8456F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32445DB5258F18AD00E8456F /* VideoViewController.swift */,
+				32445DB6258F18AD00E8456F /* VideoViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32445DD1258F213C00E8456F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32445DD2258F214500E8456F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32445DD3258F215600E8456F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				32445DCB258F1F0A00E8456F /* OrientationHandler.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		32445DD4258F217A00E8456F /* DataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				32445DD5258F21A500E8456F /* DataHandler.swift */,
+			);
+			path = DataHandler;
+			sourceTree = "<group>";
+		};
+		32D064DA258F2D3A0095B38A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				32D064DB258F2D640095B38A /* Videos.swift */,
+				32D064E0258F30FD0095B38A /* Video.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		32D064E5258F40BC0095B38A /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				32D064E6258F40D30095B38A /* GatewayProtocol.swift */,
+				32D064EB258F40F60095B38A /* Gateway.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		32D064F0258F41160095B38A /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				32D064F1258F412A0095B38A /* ParserProtocol.swift */,
+				32D064F9258F41440095B38A /* Parser.swift */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,11 +361,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32445DD6258F21A500E8456F /* DataHandler.swift in Sources */,
 				32445D86258F177400E8456F /* ViewController.swift in Sources */,
+				32D064E7258F40D30095B38A /* GatewayProtocol.swift in Sources */,
 				32445D82258F177400E8456F /* AppDelegate.swift in Sources */,
+				32D064EC258F40F60095B38A /* Gateway.swift in Sources */,
+				32D064DC258F2D640095B38A /* Videos.swift in Sources */,
 				32445DB7258F18AD00E8456F /* VideoViewController.swift in Sources */,
+				32D064E1258F30FD0095B38A /* Video.swift in Sources */,
+				32D064FA258F41440095B38A /* Parser.swift in Sources */,
 				32445D84258F177400E8456F /* SceneDelegate.swift in Sources */,
 				32445DCC258F1F0A00E8456F /* OrientationHandler.swift in Sources */,
+				32D064F2258F412A0095B38A /* ParserProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,8 +20,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func testVideoBtnAction(_ sender: UIButton) {
-        let videoVc = VideoViewController(nibName: "VideoViewController", bundle: nil)
-        navigationController?.pushViewController(videoVc, animated: true)
+        if let url = URL(string: "https://myapi-45880.firebaseapp.com/videos.json") {
+            let netwok = DataHandler(url)
+            let videoVc = VideoViewController(netwok)
+            navigationController?.pushViewController(videoVc, animated: true)
+        }
     }
         
 }
