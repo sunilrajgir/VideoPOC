@@ -46,7 +46,7 @@ class VideoViewController: UIViewController {
     
     func playVideo(vdo:Video) {
         let playerVars = ["playsinline":1,"autoplay":1]
-        self.playerView.load(withVideoId: "Oju9kp8tLpY",playerVars:playerVars)
+        self.playerView.load(withVideoId: vdo.url,playerVars:playerVars)
         self.playerView.delegate = self
     }
 }
