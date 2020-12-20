@@ -31,6 +31,8 @@
 		32D0651D258F46930095B38A /* VideoCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D0651C258F46930095B38A /* VideoCollectionCell.xib */; };
 		32D06522258F4CA70095B38A /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D06521258F4CA70095B38A /* Interactor.swift */; };
 		32D06527258F4CB20095B38A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D06526258F4CB20095B38A /* Presenter.swift */; };
+		32D87FC2258F72D80028B6E5 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32D87FC0258F72D80028B6E5 /* Assets.bundle */; };
+		32D87FC3258F72D80028B6E5 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D87FC1258F72D80028B6E5 /* YTPlayerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,9 @@
 		32D0651C258F46930095B38A /* VideoCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionCell.xib; sourceTree = "<group>"; };
 		32D06521258F4CA70095B38A /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		32D06526258F4CB20095B38A /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		32D87FBF258F72D80028B6E5 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		32D87FC0258F72D80028B6E5 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
+		32D87FC1258F72D80028B6E5 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,7 @@
 		32445D75258F177400E8456F = {
 			isa = PBXGroup;
 			children = (
+				32D87FBE258F72D80028B6E5 /* YTPlayer */,
 				32445DB4258F186000E8456F /* Impartus */,
 				32445D80258F177400E8456F /* TestVideo */,
 				32445D97258F177600E8456F /* TestVideoTests */,
@@ -280,6 +286,16 @@
 			path = CleanArchitecture;
 			sourceTree = "<group>";
 		};
+		32D87FBE258F72D80028B6E5 /* YTPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				32D87FBF258F72D80028B6E5 /* YTPlayerView.h */,
+				32D87FC0258F72D80028B6E5 /* Assets.bundle */,
+				32D87FC1258F72D80028B6E5 /* YTPlayerView.m */,
+			);
+			path = YTPlayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,6 +401,7 @@
 			files = (
 				32445D8E258F177500E8456F /* LaunchScreen.storyboard in Resources */,
 				32445D8B258F177500E8456F /* Assets.xcassets in Resources */,
+				32D87FC2258F72D80028B6E5 /* Assets.bundle in Resources */,
 				32D0651D258F46930095B38A /* VideoCollectionCell.xib in Resources */,
 				32445DB8258F18AD00E8456F /* VideoViewController.xib in Resources */,
 				32445D89258F177400E8456F /* Main.storyboard in Resources */,
@@ -414,6 +431,7 @@
 			files = (
 				32445DD6258F21A500E8456F /* DataHandler.swift in Sources */,
 				32445D86258F177400E8456F /* ViewController.swift in Sources */,
+				32D87FC3258F72D80028B6E5 /* YTPlayerView.m in Sources */,
 				32D064E7258F40D30095B38A /* GatewayProtocol.swift in Sources */,
 				32D06527258F4CB20095B38A /* Presenter.swift in Sources */,
 				32445D82258F177400E8456F /* AppDelegate.swift in Sources */,
