@@ -31,8 +31,9 @@
 		32D0651D258F46930095B38A /* VideoCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D0651C258F46930095B38A /* VideoCollectionCell.xib */; };
 		32D06522258F4CA70095B38A /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D06521258F4CA70095B38A /* Interactor.swift */; };
 		32D06527258F4CB20095B38A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D06526258F4CB20095B38A /* Presenter.swift */; };
-		32D87FC2258F72D80028B6E5 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32D87FC0258F72D80028B6E5 /* Assets.bundle */; };
-		32D87FC3258F72D80028B6E5 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D87FC1258F72D80028B6E5 /* YTPlayerView.m */; };
+		32D87FD4258F76990028B6E5 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D87FD3258F76990028B6E5 /* Test.m */; };
+		32D87FDD258F76CE0028B6E5 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32D87FDB258F76CE0028B6E5 /* Assets.bundle */; };
+		32D87FDE258F76CE0028B6E5 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D87FDC258F76CE0028B6E5 /* YTPlayerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,9 +84,12 @@
 		32D0651C258F46930095B38A /* VideoCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionCell.xib; sourceTree = "<group>"; };
 		32D06521258F4CA70095B38A /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		32D06526258F4CB20095B38A /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		32D87FBF258F72D80028B6E5 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
-		32D87FC0258F72D80028B6E5 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
-		32D87FC1258F72D80028B6E5 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		32D87FD1258F76990028B6E5 /* TestVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestVideo-Bridging-Header.h"; sourceTree = "<group>"; };
+		32D87FD2258F76990028B6E5 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		32D87FD3258F76990028B6E5 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		32D87FDA258F76CE0028B6E5 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		32D87FDB258F76CE0028B6E5 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
+		32D87FDC258F76CE0028B6E5 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +120,13 @@
 		32445D75258F177400E8456F = {
 			isa = PBXGroup;
 			children = (
-				32D87FBE258F72D80028B6E5 /* YTPlayer */,
+				32D87FD8258F76AB0028B6E5 /* ThirdParty */,
 				32445DB4258F186000E8456F /* Impartus */,
 				32445D80258F177400E8456F /* TestVideo */,
 				32445D97258F177600E8456F /* TestVideoTests */,
 				32445DA2258F177600E8456F /* TestVideoUITests */,
 				32445D7F258F177400E8456F /* Products */,
+				32D87FD1258F76990028B6E5 /* TestVideo-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -286,12 +291,22 @@
 			path = CleanArchitecture;
 			sourceTree = "<group>";
 		};
-		32D87FBE258F72D80028B6E5 /* YTPlayer */ = {
+		32D87FD8258F76AB0028B6E5 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				32D87FBF258F72D80028B6E5 /* YTPlayerView.h */,
-				32D87FC0258F72D80028B6E5 /* Assets.bundle */,
-				32D87FC1258F72D80028B6E5 /* YTPlayerView.m */,
+				32D87FD9258F76CE0028B6E5 /* YTPlayer */,
+				32D87FD2258F76990028B6E5 /* Test.h */,
+				32D87FD3258F76990028B6E5 /* Test.m */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		32D87FD9258F76CE0028B6E5 /* YTPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				32D87FDA258F76CE0028B6E5 /* YTPlayerView.h */,
+				32D87FDB258F76CE0028B6E5 /* Assets.bundle */,
+				32D87FDC258F76CE0028B6E5 /* YTPlayerView.m */,
 			);
 			path = YTPlayer;
 			sourceTree = "<group>";
@@ -363,6 +378,7 @@
 				TargetAttributes = {
 					32445D7D258F177400E8456F = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					32445D93258F177600E8456F = {
 						CreatedOnToolsVersion = 12.1;
@@ -401,7 +417,7 @@
 			files = (
 				32445D8E258F177500E8456F /* LaunchScreen.storyboard in Resources */,
 				32445D8B258F177500E8456F /* Assets.xcassets in Resources */,
-				32D87FC2258F72D80028B6E5 /* Assets.bundle in Resources */,
+				32D87FDD258F76CE0028B6E5 /* Assets.bundle in Resources */,
 				32D0651D258F46930095B38A /* VideoCollectionCell.xib in Resources */,
 				32445DB8258F18AD00E8456F /* VideoViewController.xib in Resources */,
 				32445D89258F177400E8456F /* Main.storyboard in Resources */,
@@ -431,14 +447,15 @@
 			files = (
 				32445DD6258F21A500E8456F /* DataHandler.swift in Sources */,
 				32445D86258F177400E8456F /* ViewController.swift in Sources */,
-				32D87FC3258F72D80028B6E5 /* YTPlayerView.m in Sources */,
 				32D064E7258F40D30095B38A /* GatewayProtocol.swift in Sources */,
+				32D87FD4258F76990028B6E5 /* Test.m in Sources */,
 				32D06527258F4CB20095B38A /* Presenter.swift in Sources */,
 				32445D82258F177400E8456F /* AppDelegate.swift in Sources */,
 				32D06518258F46870095B38A /* VideoCollectionCell.swift in Sources */,
 				32D064EC258F40F60095B38A /* Gateway.swift in Sources */,
 				32D06522258F4CA70095B38A /* Interactor.swift in Sources */,
 				32D064DC258F2D640095B38A /* Videos.swift in Sources */,
+				32D87FDE258F76CE0028B6E5 /* YTPlayerView.m in Sources */,
 				32445DB7258F18AD00E8456F /* VideoViewController.swift in Sources */,
 				32D06505258F43390095B38A /* VideoViewModel.swift in Sources */,
 				32D064E1258F30FD0095B38A /* Video.swift in Sources */,
@@ -622,6 +639,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -630,6 +648,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.til.popkarn.TestVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestVideo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -640,6 +660,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -648,6 +669,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.til.popkarn.TestVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestVideo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

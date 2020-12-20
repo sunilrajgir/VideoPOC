@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoViewController" customModule="TestVideo" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="4sE-M9-rNH" id="Lkk-Dp-t9V"/>
-                <outlet property="playerView" destination="sHB-cY-g8W" id="X7W-Pz-z2O"/>
+                <outlet property="playerView" destination="sHB-cY-g8W" id="4RS-z1-bDw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

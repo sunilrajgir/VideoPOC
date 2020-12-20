@@ -8,8 +8,8 @@
 import UIKit
 
 class VideoViewController: UIViewController {
-    @IBOutlet var playerView: UIView!
     @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var playerView: YTPlayerView!
     
     let controller : Controller
     weak var dataSource : VideoViewModelDataSource!
@@ -41,7 +41,13 @@ class VideoViewController: UIViewController {
     }
     
     func showDataAndPlayVideo() {
-        
+
+    }
+    
+    func playVideo(vdo:Video) {
+        let playerVars = ["playsinline":1,"autoplay":1]
+        self.playerView.load(withVideoId: "Oju9kp8tLpY",playerVars:playerVars)
+        self.playerView.delegate = self
     }
 }
 
@@ -66,6 +72,7 @@ extension VideoViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.controller.playVideo(indexPath.row)
+        self.playVideo(vdo: dataSource.videosAt(index: indexPath.row))
     }
 }
 
@@ -85,6 +92,12 @@ extension VideoViewController : VideoViewModelDelegate {
     
     func showLoader() {
         
+    }
+}
+
+extension VideoViewController : YTPlayerViewDelegate {
+    func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
+        self.playerView.playVideo()
     }
 }
 
