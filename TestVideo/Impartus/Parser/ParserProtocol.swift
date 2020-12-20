@@ -8,5 +8,5 @@
 import UIKit
 
 protocol ParserProtocol {
-    func parse<T:Codable>(_ data:Data, _ model:T, _ completion:((_ data:T?, _ error: Error?)->Void))
+    func parse(_ data:Data, _ completion:((_ data:Videos?, _ error: Error?)->Void))
 }

@@ -17,6 +17,6 @@ class VideoCollectionCell: UICollectionViewCell {
         self.imageView.image = nil
     }
     func configureCell(video:Video) {
-        headlineLable.text = "1234"
+        headlineLable.text = video.headline
     }
 }

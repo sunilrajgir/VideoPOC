@@ -29,6 +29,8 @@
 		32D0650B258F43F60095B38A /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D0650A258F43F60095B38A /* Controller.swift */; };
 		32D06518258F46870095B38A /* VideoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D06517258F46870095B38A /* VideoCollectionCell.swift */; };
 		32D0651D258F46930095B38A /* VideoCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D0651C258F46930095B38A /* VideoCollectionCell.xib */; };
+		32D06522258F4CA70095B38A /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D06521258F4CA70095B38A /* Interactor.swift */; };
+		32D06527258F4CB20095B38A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D06526258F4CB20095B38A /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		32D0650A258F43F60095B38A /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		32D06517258F46870095B38A /* VideoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionCell.swift; sourceTree = "<group>"; };
 		32D0651C258F46930095B38A /* VideoCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionCell.xib; sourceTree = "<group>"; };
+		32D06521258F4CA70095B38A /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		32D06526258F4CB20095B38A /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +259,7 @@
 		32D06512258F44180095B38A /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				32D06521258F4CA70095B38A /* Interactor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 		32D06513258F44250095B38A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				32D06526258F4CB20095B38A /* Presenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -401,9 +407,11 @@
 				32445DD6258F21A500E8456F /* DataHandler.swift in Sources */,
 				32445D86258F177400E8456F /* ViewController.swift in Sources */,
 				32D064E7258F40D30095B38A /* GatewayProtocol.swift in Sources */,
+				32D06527258F4CB20095B38A /* Presenter.swift in Sources */,
 				32445D82258F177400E8456F /* AppDelegate.swift in Sources */,
 				32D06518258F46870095B38A /* VideoCollectionCell.swift in Sources */,
 				32D064EC258F40F60095B38A /* Gateway.swift in Sources */,
+				32D06522258F4CA70095B38A /* Interactor.swift in Sources */,
 				32D064DC258F2D640095B38A /* Videos.swift in Sources */,
 				32445DB7258F18AD00E8456F /* VideoViewController.swift in Sources */,
 				32D06505258F43390095B38A /* VideoViewModel.swift in Sources */,
