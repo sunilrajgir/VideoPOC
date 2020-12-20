@@ -22,6 +22,6 @@ class Presenter {
     }
     
     func playVideo(_ index:Int) {
-        
+        viewModel.playVideo(index)
     }
 }

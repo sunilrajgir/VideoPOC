@@ -17,6 +17,7 @@ protocol VideoViewModelDelegate : NSObject {
     func showData()
     func showError()
     func showLoader()
+    func reloadCollection()
 }
 
 protocol VideoViewModelDataSource : NSObject {
@@ -27,6 +28,7 @@ protocol VideoViewModelDataSource : NSObject {
 
 class VideoViewModel : NSObject {
     var videos : [Video]?
+    var originalVideos : [Video]?
     weak var delegate : VideoViewModelDelegate?
     var viewState : ViewState = .loader {
         didSet {
@@ -51,12 +53,26 @@ class VideoViewModel : NSObject {
 // MARK:- Presenter Interface
 extension VideoViewModel {
     func playVideo(_ index:Int) {
-        
+        self.filterVideo(index: index)
+        self.delegate?.reloadCollection()
     }
     
     func showData(videos: [Video]) {
-        self.videos = videos
+        self.originalVideos = videos
+        self.filterVideo(index: 0)
         self.viewState = .success
+    }
+    
+    func filterVideo(index:Int) {
+        var listVideo = [Video]()
+        if self.originalVideos != nil {
+            for (ind,vdo) in self.originalVideos!.enumerated() {
+                if ind != index {
+                    listVideo.append(vdo)
+                }
+            }
+        }
+        self.videos = listVideo
     }
     
     func showError(error: Error) {

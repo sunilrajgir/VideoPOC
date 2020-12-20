@@ -71,6 +71,10 @@ extension VideoViewController: UICollectionViewDelegate, UICollectionViewDataSou
 
 // MARK:- VideoViewModelProtocol
 extension VideoViewController : VideoViewModelDelegate {
+    func reloadCollection() {
+        self.collectionView.reloadData()
+    }
+    
     func showData() {
         self.showDataAndPlayVideo()
     }
